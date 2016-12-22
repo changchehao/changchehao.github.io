@@ -1,0 +1,121 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  text-decoration: none;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.btn:hover .photo {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.btn:hover .photo:after {
+  opacity: 0.2;
+}
+
+.photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.photo:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cover {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 50%;
+  color: white;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin: 0;
+  text-align: center;
+  border: solid 4px #ff7300;
+  padding: 8px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  text-align: center;
+}
+
+.about {
+  background-image: url("../img/ben_middle.jpg");
+}
+
+.ui {
+  background-image: url("../img/ben_middle2.jpg");
+}
+
+
+.logo {
+  text-decoration: none;
+  position: absolute;
+  color: gray;
+  top: 1.5%;
+  left: 2.5%;
+}
+
+@media screen and (max-width: 1600px) {
+  h1 {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  .btn {
+    width: 100%;
+    height: 50%;
+  }
+
+  .logo {
+    left: initial;
+    right: 3%;
+    top: 2%;
+  }
+  .logo h2 {
+    font-size: 1rem;
+  }
+}

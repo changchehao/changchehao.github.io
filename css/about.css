@@ -1,0 +1,481 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+  font-family: "Montserrat", sans-serif,'Noto Sans TC',微軟正黑體,"HanHei TC","MHei","PingFang TC";
+}
+
+html, body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  background-color: #14143f;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../img/ben_large.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: solid 20px transparent;
+  border-top-color: #ff7300;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrap {
+  position: relative;
+  display: inline-block;
+  color: #e6e6e6;
+  padding: 0px;
+}
+
+.box {
+  display: inline-block;
+  width: 120px;
+  height: 220px;
+  background-color: #ff7300;
+  vertical-align: middle;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: show 1s cubic-bezier(0.65, 0.18, 0.38, 0.84);
+          animation: show 1s cubic-bezier(0.65, 0.18, 0.38, 0.84);
+}
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+.title {
+  display: inline-block;
+  font-size: 150px;
+  line-height: 0.8;
+  letter-spacing: 5px;
+  vertical-align: middle;
+  margin-left: -40px;
+  position: relative;
+  z-index: 9;
+}
+
+.subtitle {
+  font-size: 30px;
+  padding-top: 5vh;
+  letter-spacing: 3px;
+}
+
+.logo {
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.logo h2 {
+  font-weight: 500;
+  color: #f8f8f8;
+  font-size: 24px;
+  margin: 0;
+}
+
+.about {
+  text-decoration: none;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+.about h3 {
+  margin: 0;
+  color: #ff7300;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.about h3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  bottom: 0;
+  background-color: #ff7300;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.about h3:hover:after {
+  width: 100%;
+}
+
+section {
+  padding: 70px 0;
+}
+
+.first {
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.photo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.photo .me {
+  position: relative;
+  height: 412px;
+  width: 252px;
+  box-shadow: 7px 7px 50px rgba(0, 0, 0, 0.7), 30px 30px 0px #14143f;
+  margin-top: 15vh;
+  margin-left: -15px;
+  background-image: url("../img/ben2.jpg");
+  background-size: cover;
+  background-position: 0 center;
+}
+.photo .me:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100px;
+  left: -30px;
+  width: 37px;
+  height: 43px;
+  background-color: #ff7300;
+}
+
+.intro {
+  width: 50%;
+  color: #14143f;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.en {
+  font-size: 30px;
+}
+
+.ch {
+  font-size: 36px;
+  letter-spacing: 25px;
+}
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.skill {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 2.2;
+}
+ul li {
+  font-family: "Roboto", sans-serif,'Noto Sans TC', 微軟正黑體,"HanHei TC","MHei","PingFang TC";
+}
+
+.focus {
+  max-width: 900px;
+}
+
+.second {
+  background-color: #14143f;
+  color: #f8f8f8;
+}
+
+.left {
+  width: 50%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.right {
+  width: 50%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.barcover {
+  margin: 20px 0px;
+}
+
+.skname {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  width: 100px;
+  font-family: "Roboto", sans-serif, 微軟正黑體;
+}
+
+.skbar {
+  padding-top: 5px;
+  display: block;
+  font-size: 0;
+}
+.skbar .bar {
+  display: inline-block;
+  width: 18%;
+  margin-right: 2px;
+  height: 8px;
+  background-color: #ff7300;
+}
+
+.lab {
+  position: relative;
+}
+.lab:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: solid 7px transparent;
+  border-top-color: #ff7300;
+  top: -13px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.lab:after {
+  content: "熟悉";
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  white-space: nowrap;
+  border-radius: 3px;
+  padding: 1px 5px;
+  left: 50%;
+  top: -32px;
+  font-size: 14px;
+  background-color: #ff7300;
+  color: #14143f;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.n1:after {
+  content: "略懂";
+}
+
+.n2:after {
+  content: "尚可";
+}
+
+.n3:after {
+  content: "精通";
+}
+
+.right .bar {
+  background-color: #FFB600;
+}
+.right .bar:before {
+  border-top-color: #FFB600;
+}
+.right .bar:after {
+  background-color: #FFB600;
+}
+
+.clear {
+  margin-bottom: 50px;
+}
+
+img {
+  width: 25%;
+  height: auto;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.mywork {
+  color: #ff7300;
+  display: inline-block;
+  border: solid 2px #ff7300;
+  padding: 8px 50px;
+  font-size: 24px;
+}
+.mywork:hover {
+  background-color: #ff7300;
+  color: #14143f;
+}
+
+footer {
+  background-color: #14143f;
+  text-align: center;
+}
+
+.foot {
+  font-family: "Roboto", sans-serif;
+  color: #f8f8f8;
+  padding: 50px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 970px) {
+  .photo {
+    width: 100%;
+  }
+  .photo .me {
+    margin-left: 0;
+  }
+
+  .intro {
+    padding-top: 80px;
+    width: initial;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .en {
+    font-size: 40px;
+  }
+
+  .ch {
+    letter-spacing: 40px;
+    margin-left: 40px;
+  }
+
+  .left {
+    width: 350px;
+    padding-right: 0;
+  }
+
+  .right {
+    width: 350px;
+    padding-left: 0;
+  }
+
+  .focus {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .clear {
+    text-align: center;
+  }
+
+  .skill {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  .photo .me {
+    width: 200px;
+    height: 340px;
+  }
+
+  .title {
+    font-size: 72px;
+    margin-left: -20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+
+  .box {
+    width: 60px;
+    height: 120px;
+  }
+
+  .intro {
+    text-align: initial;
+  }
+
+  .ch {
+    text-align: center;
+    letter-spacing: 20px;
+    margin-left: 20px;
+  }
+
+  .en {
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .n1:after {
+    display: none;
+  }
+  .n1:before {
+    display: none;
+  }
+
+  .about {
+    z-index: 9;
+  }
+  .about h3 {
+    font-size: 20px;
+  }
+}
