@@ -1,9 +1,8 @@
+var pos = document.getElementById("pos");
 var myVideo = document.getElementById("video1"); 
 
-function play() {  
-    if (myVideo.paused) 
-        myVideo.play(); 
-    else 
-        myVideo.pause();  
+function playPause() {
+	pos.style.display = "none"
+    myVideo.play(); 			
 } 
-myVideo.addEventListener("click", play);
+pos.onclick = playPause ;
