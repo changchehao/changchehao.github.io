@@ -5,22 +5,22 @@ $('.all').click(function(){
 	$(this).siblings().removeClass('active');
 });
 $('.ui').click(function(){
-	$('.per').not('.per[data-group="ui"]').hide(600);
-	$('.per[data-group="ui"]').show(600);
+	$('.per').not('.per[data-group~="ui"]').hide(600);
+	$('.per[data-group~="ui"]').show(600);
 	$('.catagory').text('UI/Web');
 	$(this).addClass('active');
 	$(this).siblings().removeClass('active');
 });
 $('.indus').click(function(){
-	$('.per').not('.per[data-group="indus"]').hide(600);
-	$('.per[data-group="indus"]').show(600);
+	$('.per').not('.per[data-group~="indus"]').hide(600);
+	$('.per[data-group~="indus"]').show(600);
 	$('.catagory').text('Industrial');
 	$(this).addClass('active');
 	$(this).siblings().removeClass('active');
 });
 $('.graphic').click(function(){
-	$('.per').not('.per[data-group="graphic"]').hide(600);
-	$('.per[data-group="graphic"]').show(600);
+	$('.per').not('.per[data-group~="graphic"]').hide(600);
+	$('.per[data-group~="graphic"]').show(600);
 	$('.catagory').text('Graphic');
 	$(this).addClass('active');
 	$(this).siblings().removeClass('active');
