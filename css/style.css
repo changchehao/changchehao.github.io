@@ -79,10 +79,12 @@ p {
 }
 
 .about {
+  background-color: #14143f
   background-image: url("../img/ben_middle.jpg");
 }
 
 .ui {
+  background-color: #14143f
   background-image: url("../img/ben_middle2.jpg");
 }
 
